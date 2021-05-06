@@ -1,0 +1,37 @@
+cd devilbox
+run ./shell.sh
+mkdir multi-trans-lang-auth7
+cd multi-trans-lang-auth7
+run composer create-project laravel/laravel multi-trans-lang-auth7 ^7 --prefer-dist
+run ln -s multi-trans-lang-auth7/public/ htdocs
+open localhost and check vhosts
+
+
+go to github and make new repo - multi-trans-lang-auth7
+    …or create a new repository on the command line
+        echo "# multi-trans-lang-auth7" >> README.md
+        git init
+        # git add README.md
+
+        git config user.name "adved85"
+		git config user.email "adved85@gmail.com"
+
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin git@github.com:adved85/multi-trans-lang-auth7.git
+        git push -u origin main
+
+
+make database
+CREATE DATABASE multi_trans_lang_auth7
+	WITH
+	ENCODING = 'UTF8';
+===================================
+in this project we will testing
+
+mcamara - multilang route/middleware
+actrotomic - translatable for models
+
+laravel - auth
+spatie - searchable
+
